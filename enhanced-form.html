@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HG College of Nursing">
+    <title>HG Nursing Education & Registration Form</title>
+</head>
+<body>
+
+    <!-- ================================
+         HEADER SECTION
+         ================================ -->
+    <div style="width: 50%;">
+        <header>
+            <h1>HG College of Nursing – Student Portal</h1>
+            <p>Welcome to the official portal for nursing students. Here you can access resources, view schedules, and register for upcoming training sessions.</p>
+        </header>
+    </div>
+
+    <!-- ================================
+         LIST SECTION: NURSING RESOURCES
+         ================================ -->
+    <section>
+        <h2>Essential Skills for Nursing Students</h2>
+        <!-- Unordered list for general nursing skills -->
+        <ul>
+            <li>Patient Assessment and Vital Signs Monitoring</li>
+            <li>Medication Administration and Documentation</li>
+            <li>Infection Prevention and Control Procedures</li>
+            <li>Communication and Patient Education</li>
+        </ul>
+
+        <h3>Steps to Perform Hand Hygiene</h3>
+        <!-- Ordered list for step-by-step instructions -->
+        <ol>
+            <li>Wet hands with clean water.</li>
+            <li>Apply soap and lather for at least 20 seconds.</li>
+            <li>Rinse thoroughly under running water.</li>
+            <li>Dry hands with a clean towel or air dryer.</li>
+        </ol>
+    </section>
+
+    <!-- ================================
+         TABLE SECTION: TRAINING SCHEDULE
+         ================================ -->
+    <section>
+        <h2>Upcoming Clinical Skills Workshops</h2>
+        <!-- Table to display structured schedule data -->
+        <div style="width: 50%;"></div>
+            <table border="1" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Topic</th>
+                        <th>Instructor</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15 Aug 2025</td>
+                        <td>Basic Life Support (BLS)</td>
+                        <td>Mr. Kyalo</td>
+                        <td>Skills Lab 1</td>
+                    </tr>
+                    <tr>
+                        <td>20 Aug 2025</td>
+                        <td>Wound Dressing & Sterile Technique</td>
+                        <td>Ms. Lulu</td>
+                        <td>Surgical Ward</td>
+                    </tr>
+                    <tr>
+                        <td>25 Aug 2025</td>
+                        <td>Maternal Health Assessment</td>
+                        <td>Dr. Kabiki</td>
+                        <td>Maternity Ward</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ================================
+         MEDIA SECTION: EDUCATIONAL VIDEO
+         ================================ -->
+    <br><br>
+    <section>
+        <h2>Watch: Proper Hand Washing Technique</h2>
+            <iframe 
+                width="550" 
+                height="320" 
+                src="https://www.youtube.com/embed/3PmVJQUCm4E" 
+                title="WHO: How to handwash?" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+
+        <br><br>
+        <h2>Listen: Nursing Ethics Overview</h2>
+        <!-- HTML5 audio tag with controls -->
+        <audio controls>
+            <source src="audio/nursing_ethics_overview.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- ================================
+         FORM SECTION: STUDENT REGISTRATION
+         ================================ -->
+    <br><br>
+    <section>
+        <h2>Student Training Registration Form</h2>
+        <!-- Form element to collect student details -->
+        <form action="#" method="post" autocomplete="on">
+
+            <!-- Grouping related inputs with fieldset -->
+            <div style="width: 40%;">
+                <fieldset>
+                    <legend><b>Personal Information</b></legend>
+
+                    <!-- Text input for full name -->
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3"><br><br>
+
+                    <!-- Email input with built-in validation -->
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+                    <!-- Phone number input with pattern validation -->
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 097-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                </fieldset>
+            </div>
+
+                <!-- Workshop selection -->
+                <br><br>
+            <div style="width: 40%;">
+                <fieldset>
+                    <legend><b>Workshop Selection</b></legend>
+
+                    <!-- Drop-down list -->
+                    <label for="workshop">Select Workshop:</label>
+                    <select id="workshop" name="workshop" required>
+                        <option value="">--Choose a workshop--</option>
+                        <option value="bls">Basic Life Support (BLS)</option>
+                        <option value="wound">Wound Dressing & Sterile Technique</option>
+                        <option value="maternal">Maternal Health Assessment</option>
+                    </select><br><br>
+
+                    <!-- Date input for session -->
+                    <label for="session_date">Preferred Date:</label>
+                    <input type="date" id="session_date" name="session_date" required><br><br>
+
+                    <!-- Time input -->
+                    <label for="session_time">Preferred Time:</label>
+                    <input type="time" id="session_time" name="session_time" required>
+                </fieldset>
+            </div>
+
+                <!-- Additional Information -->
+                <br><br>
+            <div style="width: 40%;">
+                <fieldset>
+                    <legend><b>Additional Information</b></legend>
+
+                    <!-- Textarea for extra notes -->
+                    <label for="notes">Any Special Requirements:</label><br>
+                    <textarea id="notes" name="notes" rows="4" cols="50" placeholder="e.g. Wheelchair access, interpreter required"></textarea><br><br>
+
+                    <!-- Readonly field for student ID -->
+                    <label for="student_id">Student ID (auto-assigned):</label>
+                    <input type="text" id="student_id" name="student_id" value="STU-2025-001" readonly>
+                </fieldset>
+            </div>
+
+            <!-- Submit button -->
+            <br>
+            <input type="submit" value="Register Now">
+        </form>
+    </section>
+
+    <!-- ================================
+         FOOTER SECTION
+         ================================ -->
+    <footer>
+        <p>&copy; 2025 HG College of Nursing. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
