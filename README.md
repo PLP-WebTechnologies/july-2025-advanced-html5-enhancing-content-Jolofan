@@ -41,48 +41,51 @@ Submit a single HTML file named `enhanced-form.html`. It should include:
 * Effective application of native HTML5 validation.
 * Clean, well-indented, and maintainable HTML code.
 
-
+==============================================================================================
 # Jolofan assignment README – Enhanced HTML5 Content & Mastering Forms
 ## Overview
 This project is my submission for the Enhancing HTML5 Content & Mastering Forms assignment.
 It demonstrates the use of semantic HTML5 elements, structured content, media embedding, and advanced form creation with native HTML5 validation.
 The theme is Nursing Education, with examples and resources tailored to nursing students.
+--
 
 ## Features Implemented
-### Semantic HTML5 Structure
+* Semantic HTML5 Structure
 
-Used <header>, <section>, <footer> for clear content organization.
+* Used <header>, <section>, <footer> for clear content organization.
 
-### Grouped related form fields using <fieldset> and <legend> for accessibility.
+* Grouped related form fields using <fieldset> and <legend> for accessibility.
 
 ## Lists
 
-### Unordered list: General nursing skills.
+* Unordered list: General nursing skills.
 
-### Ordered list: Step-by-step hand hygiene procedure.
+* Ordered list: Step-by-step hand hygiene procedure.
 
 ## Tables
 
-Created a schedule for upcoming clinical skills workshops with headings and structured rows.
+* Created a schedule for upcoming clinical skills workshops with headings and structured rows.
 
 ## Media
 
-### Video: Demonstrating proper handwashing technique.
+* Video: Demonstrating proper handwashing technique.
 
-### Audio: Overview of nursing ethics.
+* Audio: Overview of nursing ethics.
 
+--
 ## HTML5 Form
 
-### Inputs: text, email, tel, date, time, select, textarea.
+* Inputs: text, email, tel, date, time, select, textarea.
 
-### Accessibility: All form fields have associated <label> tags.
+* Accessibility: All form fields have associated <label> tags.
 
-### Validation: Used required, pattern, minlength, type, and placeholder.
+* Validation: Used required, pattern, minlength, type, and placeholder.
 
-### readonly field for an auto-assigned Student ID.
+* readonly field for an auto-assigned Student ID.
 
-### Native HTML5 validation used—no JavaScript.
+* Native HTML5 validation used—no JavaScript.
 
+--
 ## How to Use
 Open enhanced-form.html in any modern web browser.
 
@@ -91,10 +94,11 @@ Explore the nursing-related content in the lists, table, and media sections.
 Fill in the Student Training Registration Form.
 
 Submit the form to see HTML5 validation in action.
+--
 
-Files
-enhanced-form.html → Main HTML file containing the complete project.
+## Files
+* enhanced-form.html → Main HTML file containing the complete project.
 
-handwashing.mp4 (optional) → Video demonstrating proper handwashing.
+* Video demonstrating proper handwashing.
 
-nursing_ethics.mp3 (optional) → Audio explaining nursing ethics.
+* Audio explaining nursing ethics.
